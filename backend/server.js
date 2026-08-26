@@ -1,4 +1,5 @@
 import express from 'express'
+import cors from 'cors'
 import empleadoRoute from '../backend/routes/empleado.route.js'
 import './dbconnect.js'
 
@@ -13,5 +14,6 @@ app.listen(app.get('port'), () => {
 
 //middleware
 
+app.use(cors({ origin: 'http://localhost:4200' }));
 app.use(express.json());
 app.use('/api/empleados', empleadoRoute);

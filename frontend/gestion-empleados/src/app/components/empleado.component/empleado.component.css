@@ -1,0 +1,61 @@
+/* Contenedor del formulario */
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #3e90e2;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo del Fieldset cuando está deshabilitado */
+fieldset[disabled] {
+  border: 1px dashed #d1d5db;
+  padding: 1.25rem;
+  border-radius: 6px;
+  background-color: #fdfcfc;
+}
+
+/* Leyenda del Fieldset */
+legend {
+  font-weight: 600;
+  color: #6b7280;
+  padding: 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Estilos globales para los inputs, selects y buttons deshabilitados dentro del fieldset */
+fieldset[disabled] .form-control,
+fieldset[disabled] .form-select,
+fieldset[disabled] .form-check-input,
+fieldset[disabled] .btn {
+  background-color: #f3f4f6;
+  color: #9ca3af !important;
+  border-color: #e5e7eb !important;
+  /* Muestra el ícono de 'no permitido' al pasar el mouse */
+  cursor: not-allowed !important; 
+  /* Desactiva los eventos del mouse (hover, click) */
+  pointer-events: none; 
+}
+
+/* Ajuste del texto de los placeholders */
+fieldset[disabled] .form-control::placeholder {
+  color: #d1d5db !important;
+}
+
+/* Estilos de las etiquetas (labels) */
+fieldset[disabled] .form-label,
+fieldset[disabled] .form-check-label {
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Apariencia especial para el botón submit deshabilitado */
+fieldset[disabled] .btn-primary {
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+h2 {
+    text-align: center;
+}
